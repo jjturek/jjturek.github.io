@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moose MCP privacy policy</title>
+<style>
+  body { font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+         max-width: 42rem; margin: 3rem auto; padding: 0 1rem; color: #1a1a1a; background: #fff; }
+  h1 { font-size: 1.8rem; }
+  table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+  th, td { text-align: left; vertical-align: top; padding: .4rem .5rem; border-bottom: 1px solid #ddd; }
+  code { font-size: .85em; }
+  a { color: #0b57d0; }
+  footer { margin-top: 3rem; font-size: .9rem; color: #555; }
+  @media (prefers-color-scheme: dark) {
+    body { color: #e6e6e6; background: #121212; } th, td { border-color: #333; }
+    footer { color: #aaa; } a { color: #8ab4f8; }
+  }
+</style>
+</head>
+<body>
+<h1>Moose MCP privacy policy</h1>
+<p>Effective 28 October 2026.</p>
+
+<p>Moose MCP is a connector, run on its user's own computer, that lets an AI assistant (Claude, by
+Anthropic) act in that user's Google account on the user's instruction. Its only user is its
+operator, John Turek. This policy describes what Google user data it accesses and what happens to
+that data. See the <a href="index.html">Moose MCP home page</a> for what the app does.</p>
+
+<h2>Data accessed</h2>
+<p>Moose MCP requests the following Google permissions. Each is used only to carry out a task the
+user has asked the assistant to do.</p>
+<table>
+  <tr><th>Permission</th><th>Used to</th></tr>
+  <tr><td>Google Docs <code>documents</code></td><td>read, create and edit the user's documents</td></tr>
+  <tr><td>Google Drive <code>drive</code>, <code>drive.file</code></td><td>find, read, create, move and comment on the user's files</td></tr>
+  <tr><td>Google Sheets <code>spreadsheets</code></td><td>read and edit the user's spreadsheets</td></tr>
+  <tr><td>Google Slides <code>presentations</code></td><td>read, create and edit the user's presentations</td></tr>
+  <tr><td>Gmail <code>gmail.modify</code></td><td>read messages the user points to, and create, update and delete email drafts; the app does not send email</td></tr>
+  <tr><td>Google Calendar <code>calendar.events</code></td><td>create and update events in the user's calendar</td></tr>
+  <tr><td>Apps Script <code>script.external_request</code></td><td>run the user's own scripts that call external services</td></tr>
+</table>
+
+<h2>How the data is used</h2>
+<p>Google user data is read only when the user asks the assistant to do something that needs it, and
+only to the extent that task needs. It is not used for advertising, profiling, or any purpose other
+than the user's own task, and it is not sold.</p>
+
+<h2>Where the data goes</h2>
+<ul>
+  <li>The connector runs on the user's computer. Its access token is stored there and nowhere else.</li>
+  <li>Content the assistant reads to complete a task is sent to Anthropic, the provider of the AI
+  model, as part of that task. Anthropic's handling of it is governed by
+  <a href="https://www.anthropic.com/legal/privacy">Anthropic's privacy policy</a>.</li>
+  <li>Google user data is not shared with, transferred to, or disclosed to anyone else.</li>
+  <li>Google user data is not used to develop, improve or train generalised AI or machine-learning
+  models.</li>
+</ul>
+
+<h2>Retention and deletion</h2>
+<p>Moose MCP keeps no copy of Google user data beyond what a task produces in the user's own Google
+account or on the user's own computer. The user can revoke Moose MCP's access at any time at
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>, which ends
+all further access; deleting the token file on the user's computer has the same effect.</p>
+
+<h2>Limited Use</h2>
+<p>Moose MCP's use and transfer of information received from Google APIs adheres to the
+<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User
+Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Changes</h2>
+<p>Changes to this policy are published on this page with a new effective date.</p>
+
+<h2>Contact</h2>
+<p>John Turek, <a href="mailto:jturek@gmail.com">jturek@gmail.com</a>.</p>
+
+<footer><a href="index.html">Moose MCP</a> · Privacy policy</footer>
+</body>
+</html>
